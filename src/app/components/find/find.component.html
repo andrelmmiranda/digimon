@@ -1,0 +1,19 @@
+<div class="wrapper">
+    <form action="" class="form">
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Busque pelo nome ou nível</mat-label>
+            <input matInput placeholder="Ex. koromon" name="search" [(ngModel)]="search">
+        </mat-form-field>
+        <div>
+            <input type="radio" id="name" name="filter" [(ngModel)]="filter" [value]="'name'">
+            <label for="name">Nome</label>
+
+            <input type="radio" id="level" name="filter" [(ngModel)]="filter" [value]="'level'">
+            <label for="level">Nível </label>
+        </div>
+        <div>
+            <button (click)="getMonster()" [disabled]="search === ''">Pesquisar</button>
+            <button (click)="initial()">Limpar</button>
+        </div>
+    </form>
+</div>

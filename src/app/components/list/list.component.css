@@ -1,0 +1,22 @@
+.card{
+    margin: 25px 0 0 0;
+    padding: 8px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgb(176, 176, 187);
+}
+
+.card img{
+    max-width: 150px;
+}
+
+.digi-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 25px;
+}
